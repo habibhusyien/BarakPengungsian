@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="PJSIG UGM" />
+    <meta name="description" content="leaflet basic" />
+
+    <!-- Judul pada tab browser -->
+    <title>Informasi Barak Pengungsian</title>
+
+    <!-- Leaflet CSS Library -->
+    <link rel="stylesheet" href="assets/plugins/leaflet/leaflet.css" />
+
+    <!-- Font Awesome CSS Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+
+    <!-- Search CSS Library -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/leaflet-search/leaflet-search.css"
+    />
+
+    <!-- Tab browser icon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="http://luk.staff.ugm.ac.id/logo/UGM/Resmi/Warna.gif"
+    />
+
+    <style>
+      /* Tampilan peta fullscreen */
+      html,
+      body,
+      #map {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+      }
+
+      /* Background pada Judul */
+      *.info {
+        padding: 6px 8px;
+        font: 14px/16px Arial, Helvetica, sans-serif;
+        background: white;
+        background: rgba(221, 242, 252, 0.8);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      .info h2 {
+        margin: 0 0 5px;
+        color: rgb(0, 0, 0);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Leaflet JavaScript Library -->
+    <script src="https://unpkg.com/leaflet@ 1.5.1/dist/leaflet.js"></script>
+
+    <!-- untuk menampilkan file dalam format geojson -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Geolocation JavaScript Library -->
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
+
+    <!-- Search JavaScript Library -->
+    <script src="assets/plugins/leaflet-search/leaflet-search.js"></script>
+
+    <!-- routing-machine JavaScript Library -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/leaflet-routing-machine/leaflet-routing-machine.css"
+    />
+    <script src="assets/plugins/leaflet-routing-machine/leaflet-routing-machine.js"></script>
+    <script src="assets/plugins/leaflet-routing-machine/Control.Geocoder.js"></script>
+    <script src="assets/plugins/leaflet-routing-machine/config.js"></script>
+
+    <div id="map"></div>
+
+    <script>
+      /* Initial Map */
+      var map = L.map("map").setView([-7.639735, 110.415448], 11); //lat, long, zoom
+
+      /* Judul dan Subjudul */
+      var title = new L.Control();
+      title.onAdd = function (map) {
+        this._div = L.DomUtil.create("div", "info");
+        this.update();
+        return this._div;
+      };
+      title.update = function () {
+        this._div.innerHTML =
+          "<h2>INFORMASI BARAK PENGUNGSIAN GUNUNG MERAPI </h2>Dibuat : Habib Husyien Al-Bani ";
+      };
+      title.addTo(map);
+
+      /* Menambakan Basemap */
+      var basemap1 = L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+          attribution:
+            '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ǀ SIG UGM</a>', //menambahkan nama//
+        }
+      );
+
+      var basemap2 = L.tileLayer(
+        "http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg",
+        {
+          attribution:
+            'Tiles &copy; Esri ǀ <a href="http://www.unsorry.net" target="_blank">SIG UGM</a>',
+        }
+      );
+
+      var basemap3 = L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+        {
+          attribution:
+            'Tiles &copy: Esri ǀ <a href="http://wwww.unsorry.net" target="_blank">SIG UGM</a>',
+        }
+      );
+
+      var basemap4 = L.tileLayer(
+        "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png",
+        {
+          attribution:
+            '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+        }
+      );
+
+      basemap2.addTo(map);
+
+      //deklarasi variabel data titik pengungsian
+      var barakpengungsian = L.geoJSON(null, {
+        pointToLayer: function (feature, latlng) {
+          return L.marker(latlng, {
+            icon: L.icon({
+              iconUrl: "assets/img/marker/camp2.png", //URL icon marker
+              iconSize: [40, 40], //ukuran icon marker
+              iconAnchor: [16, 32], //icon marker offset
+              popupAnchor: [0, -32], //popup offset
+              tooltipAnchor: [16, -20], //tooltip offset
+            }),
+          });
+        },
+        onEachFeature: function (feature, layer) {
+          /* Variable content untuk memanggil atribut dari data file geojson */
+          var content =
+            "Status : " +
+            feature.properties.Status +
+            "<br>" +
+            "Alamat : " +
+            feature.properties.Alamat +
+            "<br>" +
+            "Kondisi : " +
+            feature.properties.Kondisi +
+            "<br>" +
+            "Radius : " +
+            feature.properties.KRB_Radius +
+            "<br>";
+
+          layer.on({
+            click: function (e) {
+              //Fungsi ketika icon simbol di-klik
+              barakpengungsian.bindPopup(content);
+            },
+
+            mouseover: function (e) {
+              barakpengungsian.bindTooltip(feature.properties.Nama_Barak);
+            },
+
+            mouseout: function (e) {
+              barakpengungsian.closePopup();
+            },
+          });
+        },
+      });
+
+      /* memanggil data file geojson point */
+      $.getJSON("data/barak_pengungsian.geojson", function (data) {
+        barakpengungsian.addData(data);
+        map.addLayer(barakpengungsian);
+        //map.fitBounds(barakpengungsian.getBounds());
+      });
+
+      //Deklarasi variabel batas admin
+      var batasadmin = L.geoJSON(null, {
+        style: function (feature) {
+          return {
+            fillColor: "white",
+            weight: 1.5,
+            opacity: 0.5,
+            color: "black",
+            dashArray: 1,
+            fillOpacity: 0.1,
+          };
+        },
+        onEachFeature: function (feature, layer) {
+          var content =
+            "Kecamatan: " +
+            feature.properties.KECAMATAN +
+            "<br>" +
+            "Desa: " +
+            feature.properties.DESA +
+            "<br>";
+
+          layer.on({
+            click: function (e) {
+              //Fungsi ketika obyek di klik}
+              batasadmin.bindPopup(content);
+            },
+            mouseover: function (e) {
+              //Fungsi mouse berada di atas objek untuk highlight
+              var layer = e.target; //variabel layer}
+              layer.setStyle({
+                //Highlight style
+                color: "grey", //Warna garis tepi polygon
+                weight: 0.2, //Tebal garis tepi polygon
+                opacity: 1, //Transparansi garis tepi polygon
+                fillColor: "cyan", //Warna tengah polygon
+                fillOpacity: 0.4, //Transparansi polygon
+              });
+            },
+            mouseout: function (e) {
+              //Fungsi mouse keluar dari obyek
+              batasadmin.resetStyle(e.target); //Mengembalikan style garis ke style awal
+              map.closePopup(); //Menutup popup
+            },
+          });
+        },
+      });
+
+      $.getJSON("data/batas_administrasi_sleman.geojson", function (data) {
+        batasadmin.addData(data);
+        map.addLayer(batasadmin);
+        //map.fitBounds(batasadmin.getBounds());
+      });
+
+      //Deklarasi variabel radius
+      var radius = L.geoJSON(null, {
+        style: function (feature) {
+          if (feature.properties.distance < 10.0) {
+            return {
+              opacity: 1,
+              color: "black",
+              weight: 1,
+              fillOpacity: 0.7,
+              fillColor: "#ff0000",
+            };
+          }
+          if (
+            feature.properties.distance >= 10.0 &&
+            feature.properties.distance < 15.0
+          ) {
+            return {
+              opacity: 1,
+              color: "black",
+              weight: 1,
+              fillOpacity: 0.7,
+              fillColor: "#ff3333",
+            };
+          }
+          if (
+            feature.properties.distance >= 15.0 &&
+            feature.properties.distance < 20.0
+          ) {
+            return {
+              opacity: 1,
+              color: "black",
+              weight: 1,
+              fillOpacity: 0.7,
+              fillColor: "#ff6666",
+            };
+          }
+          if (
+            feature.properties.distance >= 20.0 &&
+            feature.properties.distance < 25.0
+          ) {
+            return {
+              opacity: 1,
+              color: "black",
+              weight: 1,
+              fillOpacity: 0.7,
+              fillColor: "#ff9999",
+            };
+          }
+          if (feature.properties.distance >= 25.0) {
+            return {
+              opacity: 1,
+              color: "black",
+              weight: 1,
+              fillOpacity: 0.7,
+              fillColor: "#ffcccc",
+            };
+          }
+        },
+        onEachFeature: function (feature, layer) {
+          layer.on({
+            mouseover: function (e) {
+              //Fungsi mouse berada di atas objek untuk highlight
+              var layer = e.target; //variabel layer}
+              layer.setStyle({
+                //Highlight style
+                color: "grey", //Warna garis tepi polygon
+                weight: 0.2, //Tebal garis tepi polygon
+                opacity: 1, //Transparansi garis tepi polygon
+                fillColor: "cyan", //Warna tengah polygon
+                fillOpacity: 0.7, //Transparansi polygon
+              });
+              radius.bindTooltip(feature.properties.distance + " Km", {
+                sticky: true,
+              });
+            },
+            mouseout: function (e) {
+              //Fungsi mouse keluar dari obyek
+              radius.resetStyle(e.target); //Mengembalikan style garis ke style awal
+              map.closePopup(); //Menutup popup
+            },
+          });
+        },
+      });
+
+      $.getJSON("data/Radius_Merapi.geojson", function (data) {
+        radius.addData(data);
+        //map.addLayer(radius);
+      });
+
+      /* Control Layer */
+      var baseMaps = {
+        OpenStreetMap: basemap1,
+        StamenTerrain: basemap2,
+        "Esri Imagery": basemap3,
+        "Stadia Dark Mode": basemap4,
+      };
+
+      var overlayMaps = {
+        "Lokasi Pengungsian": barakpengungsian,
+        "Radius Puncak Merapi": radius,
+        "Batas Administrasi": batasadmin,
+      };
+      L.control
+        .layers(baseMaps, overlayMaps, {
+          collapsed: false, //jika true akan menjadi simbol
+        })
+        .addTo(map);
+
+      /* Scale Bar */
+      L.control
+        .scale({
+          maxWidth: 150,
+          position: "bottomright", //posisi peletakan
+        })
+        .addTo(map);
+
+      /* Image sumber */
+      L.Control.sumber = L.Control.extend({
+        onAdd: function (map) {
+          var img = L.DomUtil.create("img");
+          img.src = "assets/img/legend/sumber.png";
+          img.style.width = "200px";
+          return img;
+        },
+      });
+
+      L.control.sumber = function (opts) {
+        return new L.Control.sumber(opts);
+      };
+
+      L.control
+        .sumber({
+          position: "bottomleft",
+        })
+        .addTo(map);
+
+      /* Image Legend */
+      L.Control.Legend = L.Control.extend({
+        onAdd: function (map) {
+          var img = L.DomUtil.create("img");
+          img.src = "assets/img/legend/legend.png";
+          img.style.width = "200px";
+          return img;
+        },
+      });
+      L.control.Legend = function (opts) {
+        return new L.Control.Legend(opts);
+      };
+
+      L.control
+        .Legend({
+          position: "bottomleft",
+        })
+        .addTo(map);
+
+      /* Image logo */
+      L.Control.Logo = L.Control.extend({
+        onAdd: function (map) {
+          var img = L.DomUtil.create("img");
+          img.src = "assets/img/logo/LOGO_SIG_BLUE.png";
+          img.style.width = "200px";
+          return img;
+        },
+      });
+
+      L.control.logo = function (opts) {
+        return new L.Control.Logo(opts);
+      };
+
+      L.control
+        .logo({
+          position: "bottomleft",
+        })
+        .addTo(map);
+
+      /* Image keterangan */
+      L.Control.keterangan = L.Control.extend({
+        onAdd: function (map) {
+          var img = L.DomUtil.create("img");
+          img.src = "assets/img/legend/ket.png";
+          img.style.width = "300px";
+          return img;
+        },
+      });
+
+      L.control.keterangan = function (opts) {
+        return new L.Control.keterangan(opts);
+      };
+
+      L.control
+        .keterangan({
+          position: "bottomright",
+        })
+        .addTo(map);
+
+      /*Plugin Geolocation */
+      var locateControl = L.control
+        .locate({
+          position: "topleft",
+          drawCircle: true,
+          follow: true,
+          setView: true,
+          keepCurrentZoomLevel: false,
+          markerStyle: {
+            weight: 1,
+            opacity: 0.8,
+            fillOpacity: 0.8,
+          },
+          circleStyle: {
+            weight: 1,
+            clickable: false,
+          },
+          icon: "fas fa-crosshairs",
+          metric: true,
+          strings: {
+            title: "Click for Your Location",
+            popup: "You're here. Accuracy {distance} {unit}",
+            outsideMapBoundsMsg: "Not available",
+          },
+          locateOptions: {
+            maxZoom: 16,
+            watch: true,
+            enableHighAccuracy: true,
+            maximumAge: 100,
+            timeout: 100,
+          },
+        })
+        .addTo(map);
+
+      /*Plugin Search */
+      var searchControl = new L.Control.Search({
+        position: "topleft",
+        layer: batasadmin, //Nama variabel layer
+        propertyName: "DESA", //Field untuk pencarian
+        marker: false,
+        moveToLocation: function (latlng, title, map) {
+          var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+          map.setView(latlng, zoom);
+        },
+      });
+      searchControl
+        .on("search:locationfound", function (e) {
+          e.layer.setStyle({
+            fillColor: "#ffae00",
+            fillOpacity: 0.7,
+            weight: 5,
+            color: "#0000ff",
+          });
+        })
+        .on("search:collapsed", function (e) {
+          featuresLayer.eachLayer(function (layer) {
+            featuresLayer.resetStyle(layer);
+          });
+        });
+      map.addControl(searchControl);
+
+      //ADD ROUTE CONTROL
+      var routeControl = L.Routing.control(
+        L.extend(window.lrmConfig, {
+          waypoints: [
+            L.latLng(-7.782864109041908, 110.36704115747739), //titik 1
+            L.latLng(-7.541908, 110.446088), //titik 2
+          ],
+          geocoder: L.Control.Geocoder.nominatim(),
+          routeWhileDragging: true,
+          reverseWaypoints: true,
+          showAlternatives: true,
+          altLineOptions: {
+            styles: [
+              {
+                color: "black",
+                opacity: 0.15,
+                weight: 9,
+              },
+              {
+                color: "white",
+                opacity: 0.8,
+                weight: 6,
+              },
+              {
+                color: "blue",
+                opacity: 0.5,
+                weight: 2,
+              },
+            ],
+          },
+        })
+      ).addTo(map);
+
+      L.Routing.errorControl(routeControl).addTo(map);
+    </script>
+  </body>
+</html>

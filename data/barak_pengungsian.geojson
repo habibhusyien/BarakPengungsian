@@ -1,0 +1,1258 @@
+{
+  "type": "FeatureCollection",
+  "name": "Barak_pengungsian",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 1,
+        "Id": 0,
+        "Nama_Barak": "Barak Baru Kecamatan",
+        "Alamat": "Wonokerto, Turi, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_14 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 430399,
+        "Koord_Y": 9154198
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.368940147000046, -7.651315129999944, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 2,
+        "Id": 1,
+        "Nama_Barak": "Barak Girikerto",
+        "Alamat": "Soprayan, Girikerto, Turi, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "4 unit",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "Non KRB_11 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 432749,
+        "Koord_Y": 9157082
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.390283662000058, -7.625266797999927, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 3,
+        "Id": 2,
+        "Nama_Barak": "Barak Gayam",
+        "Alamat": "Gayam, Argomulyo, Cangkringan, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "10 unit, 8 unit berfungsi dgn baik",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, tanah",
+        "KRB_Radius": "KRB III_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 441539,
+        "Koord_Y": 9153283
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.46993715900004, -7.659736086999942, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 4,
+        "Id": 3,
+        "Nama_Barak": "Barak Koripan",
+        "Alamat": "Koripan, Sindumartani, Ngemplak, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "9 unit",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "Non KRB_17 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 442809,
+        "Koord_Y": 9149101
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.481406808000088, -7.697570316999929, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 5,
+        "Id": 4,
+        "Nama_Barak": "Barak Pandanpuro",
+        "Alamat": "Pandanpuro, Hargobinangun, Pakem, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "6 unit",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Tidak ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "Non KRB_11 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 435610,
+        "Koord_Y": 9155276
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.416206965000072, -7.641637826999954, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 6,
+        "Id": 5,
+        "Nama_Barak": "Barak Randusari",
+        "Alamat": "Randusari, Argomulyo, Cangkringan, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "10 unit",
+        "Air": "Tidak ada",
+        "Listrik": "PLN",
+        "Gudang_Log": "Tidak ada",
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_15 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 439309,
+        "Koord_Y": 9151214
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.449693087000071, -7.678417149999973, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 7,
+        "Id": 6,
+        "Nama_Barak": "Barak Umbulmartani",
+        "Alamat": "Grogolan, Umbulmartani, Ngemplak, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "4 unit",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "Non KRB_15 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 437689,
+        "Koord_Y": 9150662
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.434997274000068, -7.68339064099996, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 8,
+        "Id": 7,
+        "Nama_Barak": "Barak Brayut",
+        "Alamat": "Brayut, Wukirsari, Cangkringan, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "8 unit",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_12 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 437426,
+        "Koord_Y": 9153982
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.432653436000066, -7.65335754299997, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 9,
+        "Id": 8,
+        "Nama_Barak": "Barak Kiyaran Wukirsari",
+        "Alamat": "Kiyaran, Wukirsari, Cangkringan, Sleman",
+        "Kapasitas": "322 orang",
+        "MCK": "4 unit",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Tidak ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "Non KRB_12 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 438254,
+        "Koord_Y": 9153419
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.440153847000033, -7.658460318999971, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 10,
+        "Id": 9,
+        "Nama_Barak": "Barak Plosokerep",
+        "Alamat": "Sambisari, Plosokerep, Umbulharjo, Cangkringan, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "9 unit",
+        "Air": "Tidak ada",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "KRB II_10 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 438854,
+        "Koord_Y": 9155547
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.445616720000089, -7.639226353999959, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 11,
+        "Id": 10,
+        "Nama_Barak": "Barak Pondokrejo",
+        "Alamat": "Banjarharjo, Pondokrejo, Tempel, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "2 unit",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Tidak ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 423624,
+        "Koord_Y": 9152757
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.307501380000076, -7.664263148999964, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 12,
+        "Id": 11,
+        "Nama_Barak": "Barak Purwobinangun",
+        "Alamat": "Watuadeg, Purwobinangun, Pakem, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "6 unit, 2 berfungsi dengan baik, dan sisanya tidak berfungsi",
+        "Air": "Tidak ada",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 433024,
+        "Koord_Y": 9154545
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.392748103000088, -7.648212384999965, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 13,
+        "Id": 12,
+        "Nama_Barak": "Barak Tirtomartani",
+        "Alamat": "Kedulan, Tirtomartani, Kalasan, Sleman",
+        "Kapasitas": "300 orang",
+        "MCK": "10 unit, 4 unit kondisinya baik, dan 6 unit perlu perbaikan",
+        "Air": "Sumur, 1 unit",
+        "Listrik": "PLN",
+        "Gudang_Log": "Ada",
+        "Lapangan": "Ada, conblock",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak BNPB",
+        "Koord_X": 441471,
+        "Koord_Y": 9144016
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.469213020000041, -7.743554098999937, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 14,
+        "Id": 13,
+        "Nama_Barak": "Barak Wonokerto",
+        "Alamat": "Wonokerto, Turi, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_11 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 431913,
+        "Koord_Y": 9157558
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.382714656000076, -7.620943391999958, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 15,
+        "Id": 14,
+        "Nama_Barak": "Barak Tanggung",
+        "Alamat": "Girikerto, Turi, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_12 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 433043,
+        "Koord_Y": 9155495
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.392929521000042, -7.639626408999959, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 16,
+        "Id": 16,
+        "Nama_Barak": "Barak Desa Glagaharjo",
+        "Alamat": "Glagaharjo, Cangkringan, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "KRB III_11 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 441314,
+        "Koord_Y": 9154568
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.467910076000067, -7.648106384999949, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 17,
+        "Id": 17,
+        "Nama_Barak": "Barak Sindumartani",
+        "Alamat": "Sindumartani, Ngemplak, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "KRB I_16 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 442256,
+        "Koord_Y": 9149694
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.476393810000047, -7.692206706999968, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 18,
+        "Id": 18,
+        "Nama_Barak": "Barak Gondanglegi",
+        "Alamat": "Hargobinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_11 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 435026,
+        "Koord_Y": 9155414
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.410909527000058, -7.640377288999957, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 19,
+        "Id": 19,
+        "Nama_Barak": "Barak Desa Umbulharjo",
+        "Alamat": "Umbulharjo, Cangkringan, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "KRB II_9 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 437460,
+        "Koord_Y": 9157028
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.432994945000075, -7.625810917999956, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 20,
+        "Id": 20,
+        "Nama_Barak": "Barak Pagerjurang",
+        "Alamat": "Kepuharjo, Cangkringan, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "KRB II_9 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 439697,
+        "Koord_Y": 9157102
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.453274787000055, -7.625170556999933, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 21,
+        "Id": 21,
+        "Nama_Barak": "Barak Merdikorejo",
+        "Alamat": "Merdikorejo, Tempel, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_15 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 427608,
+        "Koord_Y": 9156229
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.343670563000046, -7.632908657999963, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 22,
+        "Id": 22,
+        "Nama_Barak": "Barak Bimomartani",
+        "Alamat": "Bimomartani, Ngemplak, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_17 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 440628,
+        "Koord_Y": 9148841
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.461624447000077, -7.699896222999939, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 23,
+        "Id": 23,
+        "Nama_Barak": "Barak Candibinangun",
+        "Alamat": "Candibinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 434271,
+        "Koord_Y": 9153366
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.404042351000044, -7.658892288999937, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 24,
+        "Id": 24,
+        "Nama_Barak": "Barak Banyurejo",
+        "Alamat": "Banyurejo, Tempel, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 421508,
+        "Koord_Y": 9148730
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.28825411300005, -7.700648780999927, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 25,
+        "Id": 25,
+        "Nama_Barak": "Barak Sumberejo",
+        "Alamat": "Sumberejo, Tempel, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 423381,
+        "Koord_Y": 9151579
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.305280100000061, -7.674911121999969, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 26,
+        "Id": 26,
+        "Nama_Barak": "Barak Lumbungrejo",
+        "Alamat": "Lumbungrejo, Tempel, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_19 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 425627,
+        "Koord_Y": 9154147
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.325678719000052, -7.651716848999968, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 27,
+        "Id": 27,
+        "Nama_Barak": "Barak UII",
+        "Alamat": "Umbulmartani, Ngemplak, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_16 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 434861,
+        "Koord_Y": 9150288
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.40935363300008, -7.686746741999968, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 28,
+        "Id": 28,
+        "Nama_Barak": "Barak Desa Hargobinangun",
+        "Alamat": "Hargobinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "KRB II_11 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 436713,
+        "Koord_Y": 9155599
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.426210900000058, -7.638725913999963, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 29,
+        "Id": 29,
+        "Nama_Barak": "Barak Purwobinangun 2",
+        "Alamat": "Purwobinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 433170,
+        "Koord_Y": 9154402
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.394068619000052, -7.649510766999981, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 30,
+        "Id": 30,
+        "Nama_Barak": "Barak Desa Purwobinangun",
+        "Alamat": "Purwobinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 432973,
+        "Koord_Y": 9154444
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.392285264000066, -7.649126937999938, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 31,
+        "Id": 31,
+        "Nama_Barak": "Barak Desa Bimomartani",
+        "Alamat": "Bimomartani, Ngemplak, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_17 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 441018,
+        "Koord_Y": 9148908
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.465157187000045, -7.699297187999946, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 32,
+        "Id": 32,
+        "Nama_Barak": "Barak Desa Kepuharjo",
+        "Alamat": "Kepuharjo, Cangkringan, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "KRB II_9 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 439624,
+        "Koord_Y": 9157117
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.452619883000068, -7.625028269999973, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 33,
+        "Id": 33,
+        "Nama_Barak": "Youth Centre",
+        "Alamat": "Triharjo, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 428014,
+        "Koord_Y": 9145051
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.347192251000081, -7.734020082999962, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 34,
+        "Id": 34,
+        "Nama_Barak": "Gor Pangukan",
+        "Alamat": "Pangukan, Tridadi, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 427861,
+        "Koord_Y": 9147706
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.345847828000046, -7.710008884999979, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 35,
+        "Id": 35,
+        "Nama_Barak": "PPPPTK Seni dan Budaya Yogyakarta",
+        "Alamat": "Klidon, Sukoharjo, Ngaglik, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_17 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 436868,
+        "Koord_Y": 9148780
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.427526506000049, -7.700408869999933, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 36,
+        "Id": 36,
+        "Nama_Barak": "PSAA Banjarharjo, Bimomartani",
+        "Alamat": "Bimomartani, Ngemplak, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_16 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 440323,
+        "Koord_Y": 9150786
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.458883398000069, -7.682300639999937, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 37,
+        "Id": 37,
+        "Nama_Barak": "Barak Desa Wukirsari",
+        "Alamat": "Wukirsari, Cangkringan, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_12 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 438660,
+        "Koord_Y": 9153495
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.443829913000059, -7.657778202999964, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 38,
+        "Id": 38,
+        "Nama_Barak": "Barak Desa Tridadi",
+        "Alamat": "Tridadi, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 429057,
+        "Koord_Y": 9147346
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.356680292000078, -7.713278395999964, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 39,
+        "Id": 39,
+        "Nama_Barak": "Barak Desa Pandowoharjo",
+        "Alamat": "Pandowoharjo, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_19 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 429995,
+        "Koord_Y": 9148759
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.365212437000082, -7.700512118999939, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 40,
+        "Id": 40,
+        "Nama_Barak": "Barak Desa Trimulyo",
+        "Alamat": "Trimulyo, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_18 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 429154,
+        "Koord_Y": 9150804
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.357611306000081, -7.682004685999971, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 41,
+        "Id": 41,
+        "Nama_Barak": "Barak Desa Donokerto",
+        "Alamat": "Donokerto, Turi, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_14 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 431543,
+        "Koord_Y": 9153877
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.379314416000057, -7.654238671999963, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 42,
+        "Id": 42,
+        "Nama_Barak": "Barak Desa Bangunkerto",
+        "Alamat": "Bangunkerto, Turi, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_15 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 429056,
+        "Koord_Y": 9154033
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.356761609000046, -7.652796543999955, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 43,
+        "Id": 43,
+        "Nama_Barak": "Barak Desa Caturharjo",
+        "Alamat": "Caturharjo, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_>20 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 425888,
+        "Koord_Y": 9150429
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.327993373000083, -7.685348745999931, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 44,
+        "Id": 44,
+        "Nama_Barak": "Barak Desa Margorejo",
+        "Alamat": "Margorejo, Tempel, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_18 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 426178,
+        "Koord_Y": 9152858
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.330660203000036, -7.663385880999954, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 45,
+        "Id": 45,
+        "Nama_Barak": "Barak Desa Argomulyo",
+        "Alamat": "Argomulyo, Cangkringan, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "KRB II_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 440052,
+        "Koord_Y": 9153305
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.456451939000033, -7.659513200999982, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 46,
+        "Id": 0,
+        "Nama_Barak": "MTS 7 Sleman",
+        "Alamat": "Bunder, Purwobinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_14 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 432850,
+        "Koord_Y": 9153409
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.391155817000083, -7.658489213999928, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 47,
+        "Id": 0,
+        "Nama_Barak": "Barak Desa Donoharjo",
+        "Alamat": "Donoharjo, Ngaglik, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_17 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 432564,
+        "Koord_Y": 9150195
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.388525300000083, -7.687551930999973, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 48,
+        "Id": 0,
+        "Nama_Barak": "Pondok Darul Hikmah",
+        "Alamat": "Sembung, Purwobinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_15 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 432806,
+        "Koord_Y": 9151775
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.390733577000049, -7.673264001999939, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 49,
+        "Id": 0,
+        "Nama_Barak": "SLB Pakem",
+        "Alamat": "Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 436480,
+        "Koord_Y": 9152788
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.424061451000057, -7.664146829999936, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 50,
+        "Id": 0,
+        "Nama_Barak": "Balai Desa Pakembinangun",
+        "Alamat": "Pakembinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 436260,
+        "Koord_Y": 9153356
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.422073557000033, -7.659007581999958, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 51,
+        "Id": 0,
+        "Nama_Barak": "SMA Negeri 1 Pakem",
+        "Alamat": "Gambiran, Pakembinangun, Pakem, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB 13 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 436269,
+        "Koord_Y": 9153407
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.422153096000045, -7.658550282999954, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "OBJECTID": 52,
+        "Id": 0,
+        "Nama_Barak": "SD Koroulon",
+        "Alamat": "Koroulon, Bimomartani, Ngemplak, Sleman",
+        "Kapasitas": null,
+        "MCK": "Ada",
+        "Air": "Ada",
+        "Listrik": "PLN",
+        "Gudang_Log": null,
+        "Lapangan": "Ada, conblock dan tanah",
+        "KRB_Radius": "Non KRB_19 km",
+        "Kondisi": "Baik",
+        "Status": "Barak Non BNPB",
+        "Koord_X": 442059,
+        "Koord_Y": 9147578
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.474587578000069, -7.711337675999971, 0.0]
+      }
+    }
+  ]
+}
